@@ -1,0 +1,27 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded resumes and test artifacts
+uploads/
+.pytest_cache/
+.pytest_tmp/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
