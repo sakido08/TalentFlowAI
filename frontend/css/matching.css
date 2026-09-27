@@ -1,0 +1,78 @@
+.match-result-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.match-result-top .tag {
+  margin-top: 3px;
+}
+
+.breakdown-list {
+  display: grid;
+  gap: 9px;
+  margin: 17px 0;
+}
+
+.component-row {
+  padding: 11px 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.component-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+  font-size: 11px;
+}
+
+.component-heading span,
+.component-row small {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.component-track {
+  height: 6px;
+  overflow: hidden;
+  background: #e9eeee;
+  border-radius: 99px;
+}
+
+.component-track span {
+  display: block;
+  height: 100%;
+  background: var(--teal);
+  border-radius: inherit;
+}
+
+.component-row small {
+  display: block;
+  margin-top: 5px;
+}
+
+.formula-note {
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: #586970;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+  .match-result-top {
+    flex-direction: column;
+  }
+
+  .component-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+}

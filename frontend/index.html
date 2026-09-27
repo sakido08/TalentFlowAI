@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talentflow AI</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/results.css">
+  <link rel="stylesheet" href="/static/css/matching.css">
+</head>
+<body>
+  <div id="auth-view" class="auth-shell">
+    <section class="auth-card">
+      <a class="brand" href="#"><span class="brand-mark">T</span><span>Talentflow <b>AI</b></span></a>
+      <p class="eyebrow">WHERE AI MEETS CAREER POTENTIAL</p>
+      <h1 id="auth-heading">Welcome back</h1>
+      <p class="muted" id="auth-subtitle">Sign in to continue to your workspace.</p>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <form id="login-form" class="form-stack">
+        <label>Email<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button primary full" type="submit">Log in</button>
+      </form>
+      <form id="register-form" class="form-stack" hidden>
+        <label>Full name<input name="name" autocomplete="name" required minlength="2"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Password<input name="password" type="password" autocomplete="new-password" required minlength="8"></label>
+        <label>Confirm password<input name="confirm_password" type="password" autocomplete="new-password" required minlength="8"></label>
+        <button class="button primary full" type="submit">Create account</button>
+      </form>
+      <p class="auth-switch"><span id="auth-switch-copy">New to Talentflow AI?</span> <button id="auth-switch" class="link-button" type="button">Create an account</button></p>
+      <p class="auth-footnote">Academic prototype · Resume matches support human review</p>
+    </section>
+  </div>
+
+  <div id="app-view" class="app-shell" hidden>
+    <aside class="sidebar">
+      <a class="brand side-brand" href="#dashboard"><span class="brand-mark">T</span><span>Talentflow <b>AI</b></span></a>
+      <div class="nav-label">WORKSPACE</div>
+      <nav id="nav-links" class="nav-links"></nav>
+      <div class="sidebar-bottom"><div class="user-chip"><span class="avatar" id="user-avatar">TF</span><div><strong id="user-name">User</strong><small id="user-role">user</small></div></div><button class="nav-link logout" id="logout-button" type="button"><span>↪</span> Log out</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div><p class="eyebrow" id="top-eyebrow">TALENTFLOW AI</p><h1 id="page-heading">Dashboard</h1></div><div class="topbar-meta"><span class="status-dot"></span> Academic prototype</div></header>
+      <div id="app-notice" class="notice app-notice" role="status" hidden></div>
+      <section id="page-content" class="page-content" aria-live="polite"></section>
+    </main>
+  </div>
+  <script src="/static/js/app.js" defer></script>
+</body>
+</html>
